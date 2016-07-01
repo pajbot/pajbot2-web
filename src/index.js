@@ -1,2 +1,4 @@
 angular
-.module('pajbot', ['ui.router', 'ngMaterial']);
+.module('pajbot', ['ui.router', 'ngMaterial'])
+.factory('menu', menuFactory)
+;
