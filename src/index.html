@@ -3,7 +3,7 @@
   <head>
     <base href="/">
     <meta charset="utf-8">
-    <title>Memes xD</title>
+    <title>pajbot</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -20,9 +20,20 @@
 
 
   <body>
-      <h3>XD</h3>
-      <div ui-view="sideNav"></div>
-      <div ui-view></div>
+      <section layout="row" class="main">
+          <md-sidenav
+               class="md-sidenav-left"
+               md-component-id="left"
+               md-is-locked-open="true"
+               md-disable-backdrop
+               md-whiteframe="4">
+
+              <div ui-view="sideNav"></div>
+          </md-sidenav>
+          <md-content>
+              <div ui-view></div>
+          </md-content>
+      </section>
   </body>
 
   <!-- build:js({.tmp,src}) scripts/vendor.js -->

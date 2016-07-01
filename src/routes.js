@@ -12,15 +12,18 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: 'main/main.html',
     views: {
         'sideNav': {
-            template: 'MENU',
+            templateUrl: 'sidenav/sidenav.html',
         },
+        '': {
+            templateUrl: 'main/main.html',
+        }
     }
   })
   .state('dashboard', {
     url: '/dashboard',
     views: {
         'sideNav': {
-            template: 'MENU',
+            templateUrl: 'sidenav/sidenav.html',
         },
         '': {
             templateUrl: 'dashboard/dashboard.html',
@@ -31,10 +34,6 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   .state('dashboard.main', {
     url: '',
     templateUrl: 'dashboard/main/main.html',
-  })
-  .state('dashboard.test', {
-    url: '/test',
-    template: '<h1>dashboard test</h1>',
   })
   ;
 }

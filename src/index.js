@@ -1,2 +1,2 @@
 angular
-.module('pajbot', ['ui.router']);
+.module('pajbot', ['ui.router', 'ngMaterial']);
